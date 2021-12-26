@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		059E479E27760FAC006DA1EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E479D27760FAC006DA1EA /* AppDelegate.swift */; };
 		059E47A027760FAC006DA1EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E479F27760FAC006DA1EA /* SceneDelegate.swift */; };
-		059E47A227760FAC006DA1EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E47A127760FAC006DA1EA /* ViewController.swift */; };
+		059E47A227760FAC006DA1EA /* GeoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E47A127760FAC006DA1EA /* GeoViewController.swift */; };
 		059E47A527760FAC006DA1EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 059E47A327760FAC006DA1EA /* Main.storyboard */; };
 		059E47A727760FB3006DA1EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 059E47A627760FB3006DA1EA /* Assets.xcassets */; };
 		059E47AA27760FB3006DA1EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 059E47A827760FB3006DA1EA /* LaunchScreen.storyboard */; };
 		059E47B527760FB4006DA1EA /* Geo_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E47B427760FB4006DA1EA /* Geo_TaskTests.swift */; };
 		059E47BF27760FB4006DA1EA /* Geo_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E47BE27760FB4006DA1EA /* Geo_TaskUITests.swift */; };
 		059E47C127760FB4006DA1EA /* Geo_TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E47C027760FB4006DA1EA /* Geo_TaskUITestsLaunchTests.swift */; };
+		059E47CF27760FEF006DA1EA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 059E47CE27760FEF006DA1EA /* MapKit.framework */; };
+		05F03124277895540079F2F3 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 05F03123277895540079F2F3 /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 		059E479A27760FAC006DA1EA /* Geo_Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geo_Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		059E479D27760FAC006DA1EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		059E479F27760FAC006DA1EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		059E47A127760FAC006DA1EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		059E47A127760FAC006DA1EA /* GeoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoViewController.swift; sourceTree = "<group>"; };
 		059E47A427760FAC006DA1EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		059E47A627760FB3006DA1EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		059E47A927760FB3006DA1EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		059E47BA27760FB4006DA1EA /* Geo_TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Geo_TaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		059E47BE27760FB4006DA1EA /* Geo_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geo_TaskUITests.swift; sourceTree = "<group>"; };
 		059E47C027760FB4006DA1EA /* Geo_TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geo_TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		059E47CE27760FEF006DA1EA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		05F03123277895540079F2F3 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				059E47CF27760FEF006DA1EA /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,8 @@
 				059E47B327760FB4006DA1EA /* Geo_TaskTests */,
 				059E47BD27760FB4006DA1EA /* Geo_TaskUITests */,
 				059E479B27760FAC006DA1EA /* Products */,
+				059E47CD27760FEF006DA1EA /* Frameworks */,
+				8725BB1819889B996BD0A30A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +108,9 @@
 			children = (
 				059E479D27760FAC006DA1EA /* AppDelegate.swift */,
 				059E479F27760FAC006DA1EA /* SceneDelegate.swift */,
-				059E47A127760FAC006DA1EA /* ViewController.swift */,
+				059E47A127760FAC006DA1EA /* GeoViewController.swift */,
 				059E47A327760FAC006DA1EA /* Main.storyboard */,
+				05F03123277895540079F2F3 /* data.json */,
 				059E47A627760FB3006DA1EA /* Assets.xcassets */,
 				059E47A827760FB3006DA1EA /* LaunchScreen.storyboard */,
 				059E47AB27760FB3006DA1EA /* Info.plist */,
@@ -125,6 +133,21 @@
 				059E47C027760FB4006DA1EA /* Geo_TaskUITestsLaunchTests.swift */,
 			);
 			path = Geo_TaskUITests;
+			sourceTree = "<group>";
+		};
+		059E47CD27760FEF006DA1EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				059E47CE27760FEF006DA1EA /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8725BB1819889B996BD0A30A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +257,7 @@
 				059E47AA27760FB3006DA1EA /* LaunchScreen.storyboard in Resources */,
 				059E47A727760FB3006DA1EA /* Assets.xcassets in Resources */,
 				059E47A527760FAC006DA1EA /* Main.storyboard in Resources */,
+				05F03124277895540079F2F3 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				059E47A227760FAC006DA1EA /* ViewController.swift in Sources */,
+				059E47A227760FAC006DA1EA /* GeoViewController.swift in Sources */,
 				059E479E27760FAC006DA1EA /* AppDelegate.swift in Sources */,
 				059E47A027760FAC006DA1EA /* SceneDelegate.swift in Sources */,
 			);
